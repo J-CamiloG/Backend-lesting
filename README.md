@@ -1,6 +1,6 @@
 #  Sistema de Gestión de Productos
 
-## 📋 Descripción
+##  Descripción
 
 Sistema de gestión de productos y usuarios con autenticación, panel de administración y gestión de inventario. Desarrollado con Next.js y Node.js.
 
@@ -12,7 +12,6 @@ Sistema de gestión de productos y usuarios con autenticación, panel de adminis
 - 📊 Panel de administración
 - 📱 Diseño responsive
 - 📄 Documentación API con Swagger
-
 
 ## 💻 Tecnologías
 
@@ -26,16 +25,26 @@ Sistema de gestión de productos y usuarios con autenticación, panel de adminis
 ### Backend
 - Node.js con TypeScript
 - Express.js
-- Base de datos  MongoDB
+- Base de datos MongoDB
 - ODM: Mongoose
 - Autenticación con JWT 
 
+---
 
 ## 📦 Instalación
 
+### 🔻 Clonar el repositorio
+
+1. Crear una carpeta en tu equipo donde se guardará el proyecto.
+2. Abrir la terminal en esa carpeta.
+3. Ejecutar el siguiente comando para clonar el repositorio:
+
+   ```bash
+   git clone https://github.com/J-CamiloG/Backend-lesting.git
+
 ### Backend
 
-1. Clonar y acceder al directorio del backend:
+1. acceder al directorio del backend:
    ```bash
    cd backend
    ```
