@@ -42,7 +42,7 @@ export function DashboardShell({ children }: { children: React.ReactNode }) {
       {/* Sidebar Desktop */}
       <aside className="hidden w-64 flex-col border-r bg-white lg:flex">
         <div className="flex h-16 items-center border-b px-6">
-          <span className="text-xl font-semibold">SisCompras</span>
+          <span className="text-xl font-semibold text-blue-700">SisCompras</span>
         </div>
         <div className="flex-1 p-4">
           <DashboardNav />
