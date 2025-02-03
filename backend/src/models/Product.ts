@@ -1,24 +1,22 @@
 import { Schema, model } from 'mongoose';
 
-// Definir el esquema del producto
 const productSchema = new Schema({
   name: {
     type: String,
-    required: true, // El nombre es obligatorio
+    required: true,
   },
   price: {
     type: Number,
-    required: true, // El precio es obligatorio
+    required: true, 
   },
   description: {
     type: String,
-    required: false, // La descripción es opcional
+    required: false, 
   },
   createdAt: {
     type: Date,
-    default: Date.now, // Fecha de creación automática
+    default: Date.now, 
   },
 });
 
-// Crear y exportar el modelo
 export default model('Product', productSchema);

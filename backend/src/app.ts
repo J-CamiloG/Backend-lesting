@@ -3,9 +3,8 @@ import cors from 'cors';
 import dotenv from 'dotenv';
 import mongoose from 'mongoose';
 import authRoutes from './routes/authRoutes';
-import productRoutes from './routes/productRoutes'; // Importar rutas de productos
-import { setupSwagger } from './swagger'; // Importar configuración de Swagger
-
+import productRoutes from './routes/productRoutes'; 
+import { setupSwagger } from './swagger';
 dotenv.config();
 
 const app = express();
@@ -16,23 +15,19 @@ mongoose.connect(MONGO_URI)
     .then(() => console.log('Conectado a MongoDB'))
     .catch((err) => console.error('Error conectando a MongoDB:', err));
 
-// Middlewares
+
 app.use(cors());
 app.use(express.json());
 
-// Rutas
-app.use('/api/auth', authRoutes); // Rutas de autenticación
-app.use('/api', productRoutes);   // Rutas de productos
+app.use('/api/auth', authRoutes); 
+app.use('/api', productRoutes);  
 
-// Configurar Swagger
 setupSwagger(app);
 
-// Ruta de prueba
 app.get('/', (req, res) => {
-    res.send('¡Backend funcionando!');
+    res.send('Backend');
 });
 
-// Iniciar servidor
 app.listen(PORT, () => {
     console.log(`Servidor corriendo en http://localhost:${PORT}`);
 });
